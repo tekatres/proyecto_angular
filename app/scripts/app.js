@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('myappApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch'])
+  .module('myappApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch', 'ngStorage'])
 
   .config(function ($routeProvider) {
     $routeProvider

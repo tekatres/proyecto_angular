@@ -8,10 +8,10 @@
  * Controller of the myappApp
  */
 angular.module('myappApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $localStorage) {
+
+  	$scope.$storage = $localStorage;
+
+  	$localStorage.contador = "valor de local storage";
+
   });
