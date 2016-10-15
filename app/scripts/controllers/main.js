@@ -12,7 +12,7 @@ angular.module('myappApp')
 
   	$scope.$storage = $localStorage;
 
-  	$scope.c = $localStorage.contador;
+
 
   	$scope.borrar_storage = function (){
   		$localStorage.contador ++;
