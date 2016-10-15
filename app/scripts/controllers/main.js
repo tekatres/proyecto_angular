@@ -12,6 +12,15 @@ angular.module('myappApp')
 
   	$scope.$storage = $localStorage;
 
-  	$localStorage.contador = "valor de local storage";
+  	$scope.c = $localStorage.contador;
+
+  	$scope.borrar_storage = function (){
+  		$localStorage.contador ++;
+	}
+
+	$scope.borrar_storage2 = function (){
+  		$localStorage.contador --;
+	}
+
 
   });

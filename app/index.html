@@ -16,9 +16,6 @@
     <!-- endbuild -->
   </head>
   <body ng-app="myappApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="head">
@@ -55,6 +52,11 @@
     <div class="footer">
       <div class="container">
         <p><span class="glyphicon phone"></span> <b>Diseño web: </b>Jesús Aranda Ogáyar - 628092389</p>
+      </div>
+      <div class="container" ng-controller="MainCtrl">
+          <button class="btn btn-success" ng-click="borrar_storage()">sumar</button>
+          <button class="btn btn-success" ng-click="borrar_storage2()">restar</button>
+          <input type="text" disabled ng-model="c">
       </div>
     </div>
 
